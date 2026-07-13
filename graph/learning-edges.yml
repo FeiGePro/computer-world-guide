@@ -1,0 +1,21 @@
+version: 0.1
+edges:
+  - from: computer
+    relation: prerequisite_for
+    to: hardware
+
+  - from: computer
+    relation: prerequisite_for
+    to: software
+
+  - from: hardware
+    relation: recommended_before
+    to: cpu
+
+  - from: hardware
+    relation: recommended_before
+    to: ram
+
+  - from: software
+    relation: recommended_before
+    to: operating-system
