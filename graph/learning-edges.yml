@@ -1,4 +1,4 @@
-version: 0.1
+version: 0.2
 edges:
   - from: computer
     relation: prerequisite_for
@@ -19,3 +19,51 @@ edges:
   - from: software
     relation: recommended_before
     to: operating-system
+
+  - from: computer
+    relation: introduced_in
+    to: what-counts-as-a-computer
+
+  - from: hardware
+    relation: introduced_in
+    to: what-counts-as-a-computer
+
+  - from: software
+    relation: introduced_in
+    to: what-counts-as-a-computer
+
+  - from: data
+    relation: introduced_in
+    to: what-counts-as-a-computer
+
+  - from: program
+    relation: introduced_in
+    to: what-counts-as-a-computer
+
+  - from: input
+    relation: introduced_in
+    to: what-counts-as-a-computer
+
+  - from: output
+    relation: introduced_in
+    to: what-counts-as-a-computer
+
+  - from: general-purpose-computer
+    relation: introduced_in
+    to: what-counts-as-a-computer
+
+  - from: special-purpose-computer
+    relation: introduced_in
+    to: what-counts-as-a-computer
+
+  - from: automation
+    relation: mentioned_in
+    to: what-counts-as-a-computer
+
+  - from: what-counts-as-a-computer
+    relation: included_in_route
+    to: easy-beginner
+
+  - from: what-counts-as-a-computer
+    relation: included_in_route
+    to: systematic-literacy
