@@ -10,6 +10,10 @@
 
 - [数据 Data](concepts/data.md)：按照某种规则记录和表示的内容。
 
+## G
+
+- [通用计算机 General-purpose Computer](concepts/general-purpose-computer.md)：可以通过更换程序，在相同基础硬件上承担多种任务的计算机。
+
 ## H
 
 - [硬件 Hardware](concepts/hardware.md)：计算系统中具有物理形态的设备和部件。
@@ -34,9 +38,10 @@
 ## S
 
 - [软件 Software](concepts/software.md)：由程序、数据和相关资源构成的非物理功能部分。
+- [专用计算机 Special-purpose Computer](concepts/special-purpose-computer.md)：围绕有限任务和明确使用环境设计的计算机。
 - [持久化存储 Persistent Storage](concepts/persistent-storage.md)：断电后仍可长期保存数据的存储。
 
 ## 其他
 
-- [计算机 Computer](concepts/computer.md)
+- [计算机 Computer](concepts/computer.md)：能够按照规则自动处理信息的机器或系统。
 - [自动化 Automation](concepts/automation.md)
