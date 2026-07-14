@@ -1,4 +1,4 @@
-version: 0.1
+version: 0.2
 edges:
   - from: hardware
     relation: part_of
@@ -36,10 +36,34 @@ edges:
     relation: processes
     to: data
 
+  - from: computer
+    relation: receives
+    to: input
+
+  - from: computer
+    relation: produces
+    to: output
+
   - from: input
     relation: contrasts_with
     to: output
 
   - from: automation
+    relation: uses
+    to: program
+
+  - from: general-purpose-computer
+    relation: subtype_of
+    to: computer
+
+  - from: special-purpose-computer
+    relation: subtype_of
+    to: computer
+
+  - from: general-purpose-computer
+    relation: contrasts_with
+    to: special-purpose-computer
+
+  - from: general-purpose-computer
     relation: uses
     to: program
