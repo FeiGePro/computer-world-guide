@@ -11,18 +11,27 @@
 
 > 知识地图追求广阔，单篇内容追求完整；深度不由“是不是普通人”决定，而由理解价值、兴趣、逻辑结构和实际反馈决定。
 
+## 从这里开始
+
+第一篇文章：
+
+- [到底什么才算一台计算机？](articles/01-foundations/what-counts-as-a-computer.md)
+
+这篇文章从手机、路由器、家电和汽车控制器等现实例子出发，建立计算机、硬件、软件、程序、数据、输入和输出之间的第一层关系。
+
 ## 当前状态
 
 - 架构版本：`v0.15`
-- 仓库阶段：`v0.2 bootstrap`
-- 正式文章：0
-- 种子概念：12
+- 仓库阶段：`v0.2 content development`
+- 正式文章：1 篇初稿
+- 概念节点：14
 - 实际发送记录：0
 
 详细状态见 [`state/PROJECT_STATUS.md`](state/PROJECT_STATUS.md)。
 
 ## 快速入口
 
+- [第一篇文章](articles/01-foundations/what-counts-as-a-computer.md)
 - [总体架构](ARCHITECTURE.md)
 - [路线图](ROADMAP.md)
 - [术语索引](GLOSSARY.md)
