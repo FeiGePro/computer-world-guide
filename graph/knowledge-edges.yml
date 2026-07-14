@@ -1,0 +1,45 @@
+version: 0.1
+edges:
+  - from: hardware
+    relation: part_of
+    to: computer
+
+  - from: software
+    relation: part_of
+    to: computer
+
+  - from: cpu
+    relation: part_of
+    to: hardware
+
+  - from: ram
+    relation: part_of
+    to: hardware
+
+  - from: persistent-storage
+    relation: part_of
+    to: hardware
+
+  - from: program
+    relation: example_of
+    to: software
+
+  - from: operating-system
+    relation: example_of
+    to: software
+
+  - from: operating-system
+    relation: manages
+    to: hardware
+
+  - from: computer
+    relation: processes
+    to: data
+
+  - from: input
+    relation: contrasts_with
+    to: output
+
+  - from: automation
+    relation: uses
+    to: program
