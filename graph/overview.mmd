@@ -1,4 +1,6 @@
 flowchart LR
+    Article[文章：到底什么才算一台计算机？]
+
     Computer[计算机] --> Hardware[硬件]
     Computer --> Software[软件]
     Computer --> Data[数据]
@@ -10,3 +12,11 @@ flowchart LR
     Input[输入] --> Computer
     Computer --> Output[输出]
     Automation[自动化] --> Program
+
+    General[通用计算机] --> Computer
+    Special[专用计算机] --> Computer
+    General -. 对比 .-> Special
+
+    Article -. 引入 .-> Computer
+    Article -. 引入 .-> General
+    Article -. 引入 .-> Special
