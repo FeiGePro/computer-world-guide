@@ -6,6 +6,7 @@ relation_semantics:
   organized_under: 课程属于哪个一级领域
   prerequisite_for: 前者是理解后者的重要前置
   recommended_before: 建议先接触，但不是绝对门槛
+  supports: 提供理解或设计后者所需的数学、抽象或工具性支撑
   contextualizes: 提供历史、社会或现实背景
   opens: 一个简单入口可以通向哪些课程
 
