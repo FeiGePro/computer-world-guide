@@ -1,0 +1,272 @@
+version: 0.1
+scope: curriculum-skeleton
+description: 20 个一级领域对应的大学计算机专业课程与模块骨架
+
+domains:
+  - id: foundations
+    title: 计算与数字世界基础
+    course_id: computer-introduction
+    course_title: 计算机导论与计算思维
+    role: entry
+    modules:
+      - { id: computation-and-systems, title: 计算、信息与系统 }
+      - { id: abstraction-and-boundaries, title: 抽象、分层与边界 }
+      - { id: data-program-state, title: 数据、程序与状态 }
+      - { id: general-and-special-purpose, title: 通用与专用计算 }
+      - { id: system-observation, title: 从现象观察系统 }
+
+  - id: history
+    title: 计算工具的历史与演化
+    course_id: computing-history
+    course_title: 计算史与技术演化
+    role: context
+    modules:
+      - { id: mechanical-computation, title: 机械计算与自动化思想 }
+      - { id: stored-program, title: 存储程序思想 }
+      - { id: transistor-ic-microprocessor, title: 晶体管、集成电路与微处理器 }
+      - { id: pc-internet-mobile, title: 个人电脑、互联网与移动计算 }
+      - { id: cloud-and-ai-era, title: 云计算与人工智能时代 }
+      - { id: constraints-and-evolution, title: 约束如何推动技术演化 }
+
+  - id: information-and-logic
+    title: 信息表示与数字逻辑
+    course_id: information-representation-and-digital-logic
+    course_title: 信息表示与数字逻辑
+    role: core
+    modules:
+      - { id: number-systems, title: 数制与数值表示 }
+      - { id: data-representation, title: 数据表示 }
+      - { id: encoding, title: 编码与解码 }
+      - { id: boolean-logic, title: 布尔逻辑 }
+      - { id: digital-circuits, title: 逻辑门与数字电路 }
+      - { id: state-machines, title: 时序逻辑与状态机 }
+
+  - id: hardware-and-chips
+    title: 硬件、芯片与计算机组成
+    course_id: computer-organization-and-architecture
+    course_title: 计算机组成原理与体系结构
+    role: core
+    modules:
+      - { id: system-components, title: 计算机系统的组成 }
+      - { id: instruction-set, title: 指令与指令集 }
+      - { id: cpu-execution, title: CPU 如何执行程序 }
+      - { id: memory-hierarchy, title: 存储层次与缓存 }
+      - { id: io-and-interrupts, title: 输入输出、中断与 DMA }
+      - { id: parallelism-and-performance, title: 并行、性能与功耗 }
+
+  - id: operating-systems
+    title: 操作系统与设备管理
+    course_id: operating-systems
+    course_title: 操作系统
+    role: core
+    modules:
+      - { id: boot-and-kernel, title: 启动过程与内核 }
+      - { id: processes-and-threads, title: 进程与线程 }
+      - { id: scheduling-and-concurrency, title: 调度与并发 }
+      - { id: memory-management, title: 内存管理与虚拟内存 }
+      - { id: filesystems-and-io, title: 文件系统与设备输入输出 }
+      - { id: ipc-permissions-isolation, title: 进程通信、权限与隔离 }
+
+  - id: files-and-media
+    title: 文件、数据与数字媒体
+    course_id: files-data-and-media
+    course_title: 文件、数据与数字媒体
+    role: core
+    modules:
+      - { id: file-abstraction, title: 文件、目录与路径 }
+      - { id: formats-and-serialization, title: 格式与序列化 }
+      - { id: text-image-audio-video, title: 文字、图片、音频与视频 }
+      - { id: compression, title: 压缩与质量损失 }
+      - { id: storage-backup-recovery, title: 存储、备份与恢复 }
+      - { id: data-lifecycle, title: 数据生命周期 }
+
+  - id: programming
+    title: 程序与编程语言
+    course_id: programming-and-programming-languages
+    course_title: 程序设计与编程语言
+    role: core
+    modules:
+      - { id: syntax-types-control, title: 语法、类型与控制流 }
+      - { id: functions-and-abstraction, title: 函数、模块与抽象 }
+      - { id: memory-and-runtime, title: 内存模型与运行时 }
+      - { id: programming-paradigms, title: 编程范式 }
+      - { id: compilation-and-interpretation, title: 编译、解释与虚拟机 }
+      - { id: concurrency-and-errors, title: 并发、异常与错误 }
+
+  - id: algorithms
+    title: 算法、数据结构与计算复杂度
+    course_id: data-structures-and-algorithms
+    course_title: 数据结构与算法
+    role: core
+    modules:
+      - { id: problem-modeling, title: 问题建模 }
+      - { id: complexity-and-correctness, title: 复杂度与正确性 }
+      - { id: linear-structures-and-hash, title: 线性结构与哈希 }
+      - { id: trees-heaps-graphs, title: 树、堆与图 }
+      - { id: sorting-and-searching, title: 排序与查找 }
+      - { id: algorithmic-paradigms, title: 分治、贪心与动态规划 }
+
+  - id: software-engineering
+    title: 软件工程与开发协作
+    course_id: software-engineering
+    course_title: 软件工程
+    role: core
+    modules:
+      - { id: requirements-and-modeling, title: 需求与领域建模 }
+      - { id: design-and-architecture, title: 设计与系统架构 }
+      - { id: version-control-and-collaboration, title: 版本控制与协作 }
+      - { id: testing-and-debugging, title: 测试与调试 }
+      - { id: build-release-deploy, title: 构建、发布与部署 }
+      - { id: maintenance-and-quality, title: 维护、质量与可靠性 }
+
+  - id: databases-and-data-systems
+    title: 数据库与数据系统
+    course_id: database-systems
+    course_title: 数据库系统
+    role: core
+    modules:
+      - { id: data-models, title: 数据模型 }
+      - { id: relational-and-sql, title: 关系模型与 SQL }
+      - { id: storage-and-index, title: 存储与索引 }
+      - { id: query-execution, title: 查询执行与优化 }
+      - { id: transactions-and-recovery, title: 事务、并发与恢复 }
+      - { id: distributed-and-nosql, title: 分布式数据库与 NoSQL }
+
+  - id: networks-and-web
+    title: 网络、互联网与 Web
+    course_id: computer-networks-and-web
+    course_title: 计算机网络与 Web
+    role: core
+    modules:
+      - { id: communication-and-layering, title: 通信问题与分层 }
+      - { id: link-and-lan, title: 链路与局域网 }
+      - { id: ip-and-routing, title: IP 与路由 }
+      - { id: transport-and-congestion, title: 传输、可靠性与拥塞 }
+      - { id: dns-http-tls, title: DNS、HTTP 与 TLS }
+      - { id: web-architecture, title: 浏览器、服务器与 Web 架构 }
+      - { id: troubleshooting-and-performance, title: 网络排查与性能 }
+
+  - id: cloud-and-distributed
+    title: 云计算、虚拟化与分布式系统
+    course_id: distributed-systems-and-cloud
+    course_title: 分布式系统与云计算
+    role: advanced
+    modules:
+      - { id: distribution-and-failures, title: 分布式问题与故障 }
+      - { id: rpc-and-messaging, title: RPC 与消息系统 }
+      - { id: replication-and-partitioning, title: 复制、分片与容错 }
+      - { id: consistency-and-coordination, title: 一致性与协调 }
+      - { id: virtualization-and-containers, title: 虚拟化与容器 }
+      - { id: cloud-architecture, title: 云服务与弹性架构 }
+      - { id: observability, title: 可观测性 }
+
+  - id: security-and-privacy
+    title: 网络安全、密码学与身份
+    course_id: computer-security-and-cryptography
+    course_title: 计算机安全与密码学
+    role: core
+    modules:
+      - { id: threat-models, title: 威胁模型 }
+      - { id: identity-authentication-authorization, title: 身份、认证与授权 }
+      - { id: cryptographic-primitives, title: 密码学基本工具 }
+      - { id: secure-communication, title: 安全通信 }
+      - { id: system-and-application-security, title: 系统与应用安全 }
+      - { id: privacy-and-data-protection, title: 隐私与数据保护 }
+      - { id: secure-development-and-response, title: 安全开发与事故响应 }
+
+  - id: mobile-embedded-and-control
+    title: 手机、嵌入式、机器人与控制系统
+    course_id: embedded-systems-robotics-and-control
+    course_title: 嵌入式系统、机器人与控制
+    role: application
+    modules:
+      - { id: mcu-soc-and-firmware, title: 微控制器、SoC 与固件 }
+      - { id: sensors-and-actuators, title: 传感器与执行器 }
+      - { id: realtime-systems, title: 实时系统 }
+      - { id: mobile-systems-and-power, title: 移动系统与功耗 }
+      - { id: control-loops, title: 控制回路 }
+      - { id: robotics-and-iot, title: 机器人与物联网 }
+      - { id: safety-and-reliability, title: 安全与可靠性 }
+
+  - id: graphics-games-and-hci
+    title: 图形、游戏与人机交互
+    course_id: computer-graphics-games-and-hci
+    course_title: 计算机图形学、游戏与人机交互
+    role: application
+    modules:
+      - { id: perception-and-interaction, title: 感知与交互 }
+      - { id: ui-ux-and-accessibility, title: 界面、体验与可访问性 }
+      - { id: geometry-and-transformations, title: 几何与坐标变换 }
+      - { id: rendering-and-gpu, title: 渲染流程、GPU 与着色器 }
+      - { id: animation-and-physics, title: 动画与物理 }
+      - { id: game-loop-and-engine, title: 游戏循环与引擎 }
+
+  - id: artificial-intelligence
+    title: 人工智能与自动化
+    course_id: artificial-intelligence-and-machine-learning
+    course_title: 人工智能与机器学习
+    role: application
+    modules:
+      - { id: ai-problem-solving, title: 搜索、规划与规则系统 }
+      - { id: data-models-and-evaluation, title: 数据、模型与评估 }
+      - { id: supervised-unsupervised-reinforcement, title: 监督、无监督与强化学习 }
+      - { id: neural-and-deep-learning, title: 神经网络与深度学习 }
+      - { id: vision-and-language, title: 视觉与语言 }
+      - { id: generative-models, title: 生成式模型与大语言模型 }
+      - { id: deployment-and-safety, title: 部署、泛化与安全 }
+
+  - id: search-and-platforms
+    title: 搜索、推荐与互联网平台
+    course_id: search-recommendation-and-platforms
+    course_title: 搜索、推荐与互联网平台
+    role: application
+    modules:
+      - { id: information-retrieval, title: 信息检索 }
+      - { id: indexing-and-ranking, title: 索引与排序 }
+      - { id: recommendation-systems, title: 推荐系统 }
+      - { id: social-graphs, title: 社交图与平台关系 }
+      - { id: ads-and-experiments, title: 广告、实验与指标 }
+      - { id: moderation-and-governance, title: 内容治理与平台机制 }
+
+  - id: computing-and-society
+    title: 计算机、产业、社会、伦理与未来
+    course_id: computing-society-and-ethics
+    course_title: 计算机社会影响与专业伦理
+    role: context
+    modules:
+      - { id: digital-transformation, title: 数字化与社会变化 }
+      - { id: labor-and-economics, title: 自动化、劳动与产业 }
+      - { id: privacy-and-surveillance, title: 隐私与监控 }
+      - { id: fairness-and-bias, title: 偏见、公平与责任 }
+      - { id: intellectual-property-and-open-source, title: 知识产权与开源 }
+      - { id: digital-divide-and-accessibility, title: 数字鸿沟与可访问性 }
+      - { id: professional-ethics-and-future, title: 专业伦理与未来 }
+
+  - id: math-and-theory
+    title: 计算机科学的数学与理论基础
+    course_id: mathematics-and-theory
+    course_title: 数学、逻辑与计算理论
+    role: core
+    modules:
+      - { id: logic-and-proof, title: 逻辑与证明 }
+      - { id: sets-relations-functions, title: 集合、关系与函数 }
+      - { id: combinatorics-and-graphs, title: 组合数学与图 }
+      - { id: probability-linear-algebra-calculus, title: 概率、线性代数与微积分 }
+      - { id: automata-and-formal-languages, title: 自动机与形式语言 }
+      - { id: computability, title: 可计算性 }
+      - { id: complexity-and-information, title: 复杂度与信息论 }
+
+  - id: data-analysis-and-scientific-computing
+    title: 数据分析、统计与科学计算
+    course_id: data-analysis-and-scientific-computing
+    course_title: 数据分析、统计与科学计算
+    role: application
+    modules:
+      - { id: data-collection-and-cleaning, title: 数据收集与清洗 }
+      - { id: probability-and-inference, title: 概率与统计推断 }
+      - { id: regression-and-modeling, title: 回归与建模 }
+      - { id: experiments-and-causality, title: 实验与因果 }
+      - { id: visualization-and-communication, title: 可视化与表达 }
+      - { id: numerical-computing, title: 数值计算 }
+      - { id: reproducibility-and-workflows, title: 可重复性与科学工作流 }
+      - { id: machine-learning-relation, title: 数据分析与机器学习的关系 }

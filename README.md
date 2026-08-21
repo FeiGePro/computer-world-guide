@@ -21,18 +21,20 @@
 
 ## 当前状态
 
-- 架构版本：`v0.15`
-- 仓库阶段：`v0.2 content development`
+- 架构版本：v0.15
+- 仓库阶段：v0.2 content development
 - 正式文章：1 篇初稿
 - 概念节点：14
 - 实际发送记录：0
 
-详细状态见 [`state/PROJECT_STATUS.md`](state/PROJECT_STATUS.md)。
+详细状态见 state/PROJECT_STATUS.md。
 
 ## 快速入口
 
 - [第一篇文章](articles/01-foundations/what-counts-as-a-computer.md)
 - [总体架构](ARCHITECTURE.md)
+- [课程总图谱](curriculum/README.md)
+- [总学习视图](curriculum/learning-order.md)
 - [路线图](ROADMAP.md)
 - [术语索引](GLOSSARY.md)
 - [表达规范](STYLE_GUIDE.md)
@@ -44,25 +46,27 @@
 
 ## 仓库结构
 
-```text
-articles/   面向阅读的正式文章
-concepts/   稳定概念节点与术语查询页
-paths/      学习路线，只组织入口
-sessions/   实际发送和交流记录
-graph/      知识关系图与教学关系图
-feedback/   兴趣、困难、误解与修订反馈
-sources/    可追溯资料来源
-templates/  文章、概念和发送记录模板
-state/      当前状态与下一步候选
-```
+~~~text
+articles/    面向阅读的正式文章
+concepts/    稳定概念节点与术语查询页
+curriculum/  大学计算机专业课程与模块骨架
+paths/       学习路线，只组织入口
+sessions/    实际发送和交流记录
+graph/       知识关系图、教学关系图和课程关系图
+feedback/    兴趣、困难、误解与修订反馈
+sources/     可追溯资料来源
+templates/   文章、概念和发送记录模板
+state/       当前状态与下一步候选
+~~~
 
 ## 初期工作流
 
-1. 从 `state/NEXT_CANDIDATES.md` 选择一个主题；
-2. 使用 `templates/article.md` 创建文章；
-3. 创建或补充文章涉及的概念节点；
-4. 更新 `graph/knowledge-edges.yml` 和 `graph/learning-edges.yml`；
-5. 技术检查通过后，再决定是否发送；
-6. 实际发送后，用 `templates/session.md` 记录反馈。
+1. 从 curriculum/ 或 state/NEXT_CANDIDATES.md 选择一个入口；
+2. 查看对应课程和模块的前置关系；
+3. 使用 templates/article.md 创建文章；
+4. 创建或补充文章涉及的概念节点；
+5. 更新对应的课程、知识和教学关系；
+6. 技术检查通过后，再决定是否发送；
+7. 实际发送后，用 templates/session.md 记录反馈。
 
-当前阶段不引入复杂脚本、自动生成器或多人协作规范。达到明确规模后再升级，详见 [`ROADMAP.md`](ROADMAP.md)。
+当前阶段不引入复杂脚本、自动生成器或多人协作规范。达到明确规模后再升级，详见 ROADMAP.md。

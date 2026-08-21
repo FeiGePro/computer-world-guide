@@ -1,0 +1,116 @@
+version: 0.1
+scope: curriculum
+description: 课程、领域与简单入口之间的教学关系
+
+relation_semantics:
+  organized_under: 课程属于哪个一级领域
+  prerequisite_for: 前者是理解后者的重要前置
+  recommended_before: 建议先接触，但不是绝对门槛
+  contextualizes: 提供历史、社会或现实背景
+  opens: 一个简单入口可以通向哪些课程
+
+nodes:
+  - { id: computer-introduction, kind: course, title: 计算机导论与计算思维 }
+  - { id: computing-history, kind: course, title: 计算史与技术演化 }
+  - { id: information-representation-and-digital-logic, kind: course, title: 信息表示与数字逻辑 }
+  - { id: computer-organization-and-architecture, kind: course, title: 计算机组成原理与体系结构 }
+  - { id: operating-systems, kind: course, title: 操作系统 }
+  - { id: files-data-and-media, kind: course, title: 文件、数据与数字媒体 }
+  - { id: programming-and-programming-languages, kind: course, title: 程序设计与编程语言 }
+  - { id: data-structures-and-algorithms, kind: course, title: 数据结构与算法 }
+  - { id: software-engineering, kind: course, title: 软件工程 }
+  - { id: database-systems, kind: course, title: 数据库系统 }
+  - { id: computer-networks-and-web, kind: course, title: 计算机网络与 Web }
+  - { id: distributed-systems-and-cloud, kind: course, title: 分布式系统与云计算 }
+  - { id: computer-security-and-cryptography, kind: course, title: 计算机安全与密码学 }
+  - { id: embedded-systems-robotics-and-control, kind: course, title: 嵌入式系统、机器人与控制 }
+  - { id: computer-graphics-games-and-hci, kind: course, title: 计算机图形学、游戏与人机交互 }
+  - { id: artificial-intelligence-and-machine-learning, kind: course, title: 人工智能与机器学习 }
+  - { id: search-recommendation-and-platforms, kind: course, title: 搜索、推荐与互联网平台 }
+  - { id: computing-society-and-ethics, kind: course, title: 计算机社会影响与专业伦理 }
+  - { id: mathematics-and-theory, kind: course, title: 数学、逻辑与计算理论 }
+  - { id: data-analysis-and-scientific-computing, kind: course, title: 数据分析、统计与科学计算 }
+
+  - { id: entry-computer-task, kind: entry, title: 一个任务如何被计算机完成 }
+  - { id: entry-information, kind: entry, title: 信息如何被表示 }
+  - { id: entry-resource-sharing, kind: entry, title: 多个程序如何共享一台计算机 }
+  - { id: entry-communication, kind: entry, title: 两台计算机如何互相通信 }
+  - { id: entry-data-storage, kind: entry, title: 大量数据如何保存和查找 }
+  - { id: entry-efficiency, kind: entry, title: 同一个问题为什么有快慢不同的解决方法 }
+
+edges:
+  - { from: computer-introduction, relation: organized_under, to: foundations }
+  - { from: computing-history, relation: organized_under, to: history }
+  - { from: information-representation-and-digital-logic, relation: organized_under, to: information-and-logic }
+  - { from: computer-organization-and-architecture, relation: organized_under, to: hardware-and-chips }
+  - { from: operating-systems, relation: organized_under, to: operating-systems }
+  - { from: files-data-and-media, relation: organized_under, to: files-and-media }
+  - { from: programming-and-programming-languages, relation: organized_under, to: programming }
+  - { from: data-structures-and-algorithms, relation: organized_under, to: algorithms }
+  - { from: software-engineering, relation: organized_under, to: software-engineering }
+  - { from: database-systems, relation: organized_under, to: databases-and-data-systems }
+  - { from: computer-networks-and-web, relation: organized_under, to: networks-and-web }
+  - { from: distributed-systems-and-cloud, relation: organized_under, to: cloud-and-distributed }
+  - { from: computer-security-and-cryptography, relation: organized_under, to: security-and-privacy }
+  - { from: embedded-systems-robotics-and-control, relation: organized_under, to: mobile-embedded-and-control }
+  - { from: computer-graphics-games-and-hci, relation: organized_under, to: graphics-games-and-hci }
+  - { from: artificial-intelligence-and-machine-learning, relation: organized_under, to: artificial-intelligence }
+  - { from: search-recommendation-and-platforms, relation: organized_under, to: search-and-platforms }
+  - { from: computing-society-and-ethics, relation: organized_under, to: computing-and-society }
+  - { from: mathematics-and-theory, relation: organized_under, to: math-and-theory }
+  - { from: data-analysis-and-scientific-computing, relation: organized_under, to: data-analysis-and-scientific-computing }
+
+  - { from: computer-introduction, relation: recommended_before, to: information-representation-and-digital-logic }
+  - { from: computer-introduction, relation: recommended_before, to: programming-and-programming-languages }
+  - { from: computer-introduction, relation: recommended_before, to: computer-organization-and-architecture }
+  - { from: computer-introduction, relation: recommended_before, to: mathematics-and-theory }
+
+  - { from: information-representation-and-digital-logic, relation: prerequisite_for, to: computer-organization-and-architecture }
+  - { from: mathematics-and-theory, relation: supports, to: information-representation-and-digital-logic }
+  - { from: mathematics-and-theory, relation: supports, to: data-structures-and-algorithms }
+  - { from: mathematics-and-theory, relation: supports, to: artificial-intelligence-and-machine-learning }
+  - { from: mathematics-and-theory, relation: supports, to: data-analysis-and-scientific-computing }
+
+  - { from: programming-and-programming-languages, relation: prerequisite_for, to: data-structures-and-algorithms }
+  - { from: programming-and-programming-languages, relation: recommended_before, to: operating-systems }
+  - { from: programming-and-programming-languages, relation: recommended_before, to: software-engineering }
+  - { from: programming-and-programming-languages, relation: recommended_before, to: database-systems }
+  - { from: programming-and-programming-languages, relation: recommended_before, to: computer-graphics-games-and-hci }
+  - { from: programming-and-programming-languages, relation: recommended_before, to: data-analysis-and-scientific-computing }
+
+  - { from: computer-organization-and-architecture, relation: recommended_before, to: operating-systems }
+  - { from: computer-organization-and-architecture, relation: recommended_before, to: embedded-systems-robotics-and-control }
+
+  - { from: files-data-and-media, relation: recommended_before, to: database-systems }
+  - { from: data-structures-and-algorithms, relation: recommended_before, to: artificial-intelligence-and-machine-learning }
+  - { from: data-structures-and-algorithms, relation: recommended_before, to: search-recommendation-and-platforms }
+
+  - { from: operating-systems, relation: recommended_before, to: distributed-systems-and-cloud }
+  - { from: computer-networks-and-web, relation: prerequisite_for, to: distributed-systems-and-cloud }
+  - { from: operating-systems, relation: recommended_before, to: computer-security-and-cryptography }
+  - { from: computer-networks-and-web, relation: recommended_before, to: computer-security-and-cryptography }
+  - { from: database-systems, relation: recommended_before, to: search-recommendation-and-platforms }
+  - { from: data-analysis-and-scientific-computing, relation: recommended_before, to: artificial-intelligence-and-machine-learning }
+
+  - { from: computing-history, relation: contextualizes, to: computer-introduction }
+  - { from: computing-history, relation: contextualizes, to: computer-organization-and-architecture }
+  - { from: computing-history, relation: contextualizes, to: computer-networks-and-web }
+  - { from: computing-society-and-ethics, relation: contextualizes, to: artificial-intelligence-and-machine-learning }
+  - { from: computing-society-and-ethics, relation: contextualizes, to: search-recommendation-and-platforms }
+  - { from: computing-society-and-ethics, relation: contextualizes, to: computer-security-and-cryptography }
+
+  - { from: entry-computer-task, relation: opens, to: computer-introduction }
+  - { from: entry-computer-task, relation: opens, to: programming-and-programming-languages }
+  - { from: entry-computer-task, relation: opens, to: computer-organization-and-architecture }
+  - { from: entry-information, relation: opens, to: information-representation-and-digital-logic }
+  - { from: entry-information, relation: opens, to: files-data-and-media }
+  - { from: entry-information, relation: opens, to: data-analysis-and-scientific-computing }
+  - { from: entry-resource-sharing, relation: opens, to: operating-systems }
+  - { from: entry-communication, relation: opens, to: computer-networks-and-web }
+  - { from: entry-communication, relation: opens, to: distributed-systems-and-cloud }
+  - { from: entry-communication, relation: opens, to: computer-security-and-cryptography }
+  - { from: entry-data-storage, relation: opens, to: files-data-and-media }
+  - { from: entry-data-storage, relation: opens, to: database-systems }
+  - { from: entry-data-storage, relation: opens, to: search-recommendation-and-platforms }
+  - { from: entry-efficiency, relation: opens, to: data-structures-and-algorithms }
+  - { from: entry-efficiency, relation: opens, to: mathematics-and-theory }

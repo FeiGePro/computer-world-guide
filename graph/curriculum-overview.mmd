@@ -1,0 +1,37 @@
+flowchart TD
+    Intro["计算机导论与计算思维"]
+    Info["信息表示与数字逻辑"]
+    Math["数学、逻辑与计算理论"]
+    Program["程序设计与编程语言"]
+    Org["计算机组成原理与体系结构"]
+    Algorithms["数据结构与算法"]
+    OS["操作系统"]
+    Data["文件、数据与数字媒体"]
+    DB["数据库系统"]
+    Network["计算机网络与 Web"]
+    Distributed["分布式系统与云计算"]
+    Security["计算机安全与密码学"]
+    AI["人工智能与机器学习"]
+    Applications["图形、嵌入式、数据分析与平台"]
+
+    Intro --> Info
+    Intro --> Program
+    Intro --> Org
+    Intro --> Math
+
+    Info --> Org
+    Math --> Algorithms
+    Math --> AI
+    Program --> Algorithms
+    Program --> OS
+    Program --> Data
+    Org --> OS
+    Org --> Applications
+    Algorithms --> AI
+    Data --> DB
+    OS --> Distributed
+    Network --> Distributed
+    OS --> Security
+    Network --> Security
+    DB --> Applications
+    Distributed --> Applications
